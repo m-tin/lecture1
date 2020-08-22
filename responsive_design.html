@@ -4,6 +4,7 @@
 		<title>Responsive Design</title>
 		<!-- using viewport to prevent small size of text on moblie screen-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<style>
 			@media print{
 				.screen-only{
@@ -49,6 +50,11 @@
 				padding:20px;
 				text-align:center;
 			}
+			.row >div{
+				padding: 20px;
+				background-color: teal;
+				border: 2px solid black;
+			}
 		</style>
 	</head>
 	<body>
@@ -78,6 +84,21 @@
 			<div class="grid-item">10</div>
 			<div class="grid-item">11</div>
 			<div class="grid-item">12</div>
+		</div>
+		<div class="row">
+			<!-- on small device it takes 6 col on large screen it takes 3 col -->
+			<div class="col-lg-3 col-sm-6">
+				This is a section.
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				This is another section.
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				This is a third section.
+			</div>
+			<div class="col-lg-3 col-sm-6">
+				This is a fourth section.
+			</div>
 		</div>
 	</body>
 </html>
