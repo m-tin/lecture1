@@ -12,15 +12,22 @@
 				body{
 					background-color: red;
 				}
+				h1::after{
+					content:"Welcome to My Web Page!";
+				}
 			}
 			@media (max-width: 499px){
 				body{
 					background-color: blue;
 				}
+				h1::after{
+					content:"Welcome!";
+				}
 			}
 		</style>
 	</head>
 	<body>
+		<h1></h1>
 		<p>This is a paragraph</p>
 		<p>This is another paragraph</p>
 		<p class="screen-only">This paragraph won't appear when you print this page!</p>
